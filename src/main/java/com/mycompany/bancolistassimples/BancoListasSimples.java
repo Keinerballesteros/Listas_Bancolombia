@@ -83,7 +83,7 @@ public class BancoListasSimples {
              JOptionPane.showMessageDialog(null, "La Lista esta vacía");
          }
          else{
-             while(temporal.getEnlace()!= null){
+             while(temporal!= null){
              JOptionPane.showMessageDialog(null, temporal.toString());
              temporal = temporal.getEnlace();
          }
@@ -97,7 +97,7 @@ public class BancoListasSimples {
              JOptionPane.showMessageDialog(null, "La Lista esta vacía");
          }
          else{
-             while(temporal.getEnlace()!= null){
+             while(temporal != null){
                  if(nombre.equalsIgnoreCase(temporal.getNombre())){
                      JOptionPane.showMessageDialog(null, "El usuario tiene el turno "+contador);
                      encontrado = true;
